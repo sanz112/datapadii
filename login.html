@@ -391,13 +391,13 @@ ul.nav-menu li a:hover {
   outline:none;
   }
 
-
+/* 
   @media (min-width: 768px) {
 
 .bgg-image {
   display: none;
 }
-}
+} */
       @media (max-width: 995px) {
           .logo-image{
               display: none;
@@ -495,12 +495,12 @@ height: auto;
 </section>
 
 
-<div class="hello">
+<div  class="hello">
     <!-- <div class="container"> -->
     <div class="row g-0">
     
-    <div class="col-lg-6">
-    <div class="d-flex h-100  justify-content-center align-items-center">
+    <div class="col-lg-6 pt-5 mt-5">
+    <div class="d-flex h-100 justify-content-center align-items-center align-content-center">
     <div class="container px-3" data-aos="fade-up"> 
     <div class="login">
     <!-- <div class="container"> -->
@@ -509,7 +509,7 @@ height: auto;
         
         <div class="col-lg-10 mx-auto">
           <!-- <div style="line-height: 3px;"> -->
-          <h3 style="color: blue; margin-bottom: -10px; font-weight: 600;" class="login-heading mb-4">Log In</h3>
+          <h3 style="color: #2581DC; margin-bottom: -10px; font-weight: 600;" class="login-heading mb-4">Log In</h3>
           <p> Earn unlimited cash rewards and DataPadi points</p>
       <!-- </div> -->
       <div class="row mb-4">
@@ -527,7 +527,7 @@ height: auto;
             <div class="vl mt-3 mb-4">
               <span class="vl-innertext text-center">Or sign in with email</span>
             </div>
-          <form>
+          <form method="POST">
               <div class="form-group mt-2">
                   <label for="exampleInputEmail1">Phone Number*</label>
                   <input type="number" class="py-2 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
@@ -535,7 +535,14 @@ height: auto;
                 </div>
               <div class="form-group mt-2">
                 <label for="exampleInputPassword1">Password*</label>
+                <div class="input-group">
                 <input type="password" class="py-2 form-control" id="exampleInputPassword1" placeholder="">
+                <div class="input-group-append">
+                    <div class="py-2 input-group-text">
+                      <input type="checkbox" class="px-2 mx-1" aria-label="Checkbox for following text input">
+                       Show Password
+                    </div>
+                  </div>
               </div>
               <div class="d-flex mt-4">
               <div class="col-6 form-check">
@@ -547,9 +554,9 @@ height: auto;
               </div>
             </div>
               <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-              <div class="py-3 d-grid">
+              <div style="font-size: 20px;" class="py-3 d-grid">
                   <input class="btn btn-md btn-danger btn-block text-center py-2 btn-1 fw-bold mb-2" type="submit" value="Log In">
-                  <div class="text-center">
+                  <div class="my-auto mt-3 text-center">
                     <p>Not registed yet?<a class="small" style="color: rgb(105, 105, 172);" href="/register.html"> Create an Account</a></p>
                   </div>
                 </div>  
@@ -560,9 +567,10 @@ height: auto;
     </div>
     </div>
     </div>
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bgg-image"></div>
+    <div class=" d-md-flex col-md-4 col-lg-6 bgg-image"></div>
     </div>
     </div>
+    <!-- <div class=" d-md-flex col-md-4 col-lg-6 bgg-image"></div> -->
 </body>
 </html>
 
