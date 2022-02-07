@@ -1,0 +1,12 @@
+.bg-image {
+    background-image: url('../images/signupp.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bgg-image {
+    background-image: url('../images/login.png');
+    background-size: cover;
+    background-position: center;
+    /* min-height: 100vh; */
+  }
