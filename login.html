@@ -443,6 +443,9 @@ height: auto;
   input {
       padding: 5px 20px;
   }
+  p {
+    font-size: 16px;
+  }
 </style>
 <section class="navigation">
 <div class="nav-container">
@@ -459,11 +462,11 @@ height: auto;
   <div class="row d-flex"><a id="navbar-toggle" href="#!"><span></span></a></div></div>
 <ul class="nav-list nav-menu">
   <li>
-    <a href="#!">Home</a>
+    <a href="/">Home</a>
   </li>
 
   <li>
-    <a href="#!">Dashboard</a>
+    <a href="/dashboard">Dashboard</a>
   </li>
  
     <!-- <ul class="navbar-dropdown">
@@ -481,10 +484,10 @@ height: auto;
     <a href="#!">Contact</a>
   </li>
   <li>
-    <a href="#!">Register</a>
+    <a href="/signup.html">Register</a>
   </li>
   <li>
-    <a style="color: #a90c0c; font-weight: 700;" href="#!">Login</a>
+    <a style="color: #a90c0c; font-weight: 700;" href="/login.html">Login</a>
   </li>
   
 </ul>
@@ -499,7 +502,7 @@ height: auto;
     <!-- <div class="container"> -->
     <div class="row g-0">
     
-    <div class="col-lg-6 pt-4 mt-5">
+    <div class="col-lg-6 pt-4 pt-lg-5 my-5">
     <div class="d-flex h-100 justify-content-center align-items-center align-content-center">
     <div class="container px-3" data-aos="fade-up"> 
     <div class="login">
@@ -509,8 +512,12 @@ height: auto;
         
         <div class="col-lg-10 mx-auto">
           <!-- <div style="line-height: 3px;"> -->
-          <h3 style="color: #2581DC; margin-bottom: -10px; font-weight: 600;" class="login-heading mb-4">Log In</h3>
-          <p> Earn unlimited cash rewards and DataPadi points</p>
+          <h3 style="color: #2581DC; font-weight: 600;" class="login-heading mb-4">Log In</h3>
+          <p> Earn unlimited cash rewards and <span style="color:#cc0e0e;">$Padi</span> points</p>
+
+          <div style="color:#cc0e0e; font-weight: 600; text-align:right;" class="note my-1 text-right">
+            <stong><small class="text-right">Please Note that all text marked asterik are mandatory</small></stong>
+          </div>
       <!-- </div> -->
       <div class="row mb-4">
           <!-- <div class="d-flex justify-content-between"> -->
@@ -529,7 +536,7 @@ height: auto;
             </div>
           <form method="POST">
               <div class="form-group mt-2">
-                  <label for="exampleInputEmail1">Phone Number*</label>
+                  <label for="exampleInputEmail1">Email/Phone Number*</label>
                   <input type="number" class="py-2 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
@@ -558,7 +565,7 @@ height: auto;
               <div style="font-size: 18px;" class="py-3 d-grid">
                   <input class="btn btn-md btn-danger btn-block text-center py-2 btn-1 fw-bold mb-2" type="submit" value="Log In">
                   <div class="my-auto mt-3 text-center">
-                    <p>Not registed yet?<a class="" style="color: rgb(30, 30, 95);" href="/register.html"> Create an Account</a></p>
+                    <p>Not registed yet? <a class="" style="color: rgb(30, 30, 95);" href="/signup.html"> Create an Account</a></p>
                   </div>
                 </div>  
           </form> 
